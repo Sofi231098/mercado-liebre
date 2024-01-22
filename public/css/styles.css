@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product-desc-box > .fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.product-desc-box {
+    position: relative;
+}
+
+body{
+    font-family: Roboto;
+    background-color: #ebebeb;
+}
+
+.img-productos{
+    width: 100%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+
+.logo{
+    width:40%;
+    padding-bottom: 10px;
+}
+
+.search{    
+    margin: auto;
+}
+
+.search input{
+    border: none;
+    border-radius:5px;
+    padding: 5px;
+}
+
+.search button{
+    border: none;
+    border-radius:5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.copy-header{
+    text-align: center;
+    font-size: 16px;
+    margin:5px;
+    margin-bottom: 15px;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #03264C;
+    font-size: 16px;
+    display: inline-block;
+    padding:5px 0;
+}
+
+.navBar{
+    display: none;
+}
+
+.burger-menu{
+    color:white;
+    background-color:  #1259c3;;
+    display: block;
+    max-width: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding:10px 0 ;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+.home-banner{
+    width: 100%;
+}
+
+.titulares{
+    font-size: 24px;
+    color:#666;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.precio{
+    font-size:18px;
+    color:#666;
+    margin: 10px 5px 5px 10px;
+
+}
+.descuento{
+    color:#39b54a;
+    font-size: 16px;
+    margin: 10px 5px 5px 10px;
+   
+}
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+}
+
+.descripciones{
+    font-size: 16px;
+    color:#666;
+    padding: 0 0 18px;
+    margin: 10px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.caja-articulo{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.fa-truck{
+    color:#39b54a;
+    border:1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px 15px 15px 5px; 
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+
+
+.footer-container{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.footer-container i{
+    color:#03264C;
+    font-size: 30px;
+    margin: 16px;
+}
+
+.footer-container h4{
+    color:#666;
+    font-size: 18px;
+}
+
+.footer-container p{
+    color:#666;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+@media(min-width:480px){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .copy-header{
+        margin: auto;
+    }
+
+    .logo{
+        box-sizing: border-box;
+        margin:15px;
+    }
+
+    .descripciones{
+        display: none;
+
+       
+    }
+
+    &:hover{
+        .descripciones{
+            display: block;
+        }
+    }
+
+    &:hover{
+        .container-article article{
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+    }
+    
+}
+
+@media(min-width:768px){
+    .main-header-top-bar, .navBar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .logo{
+        width: 30%;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navBar ul{
+        display: flex;
+    }
+
+    .navBar li{
+        margin:0 5px
+    }
+
+    .container-article-1 h2{
+        display: block;
+    }
+    .container-article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .container-article article{
+        width:40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       margin-bottom: 25px;
+    }
+
+   .descripciones{
+    display: block;
+   }
+}
+
+@media(min-width: 1200px){
+    .main-header-top-bar, .navBar{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .copy-header{
+        max-width: none;
+        margin:0;
+        font-size: 25px;
+    }
+    .navBar{
+        margin-top: 30px;
+    }
+    .navBar li{
+        margin:0 10px;
+    }
+    .navBar a{
+        font-size: 25px;
+    }
+
+    .container-article article{
+        width:20%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer-container section{
+        width: 30%;
+    }
+
+    .footer-container .copyright{
+        width: 100%;
+    }
+}
+
+/*Login*/
+.formLogin{
+    width:50%;
+    justify-content: center;
+    margin: auto;
+}
+
+.formLogin .inp{
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+.formLogin .button{
+    display: block;
+    margin:auto;
+    margin-bottom: 15px;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #1259c3;
+    color: white;
+}
+
+.formLogin .button:hover{
+    background-color: #0022AA;
+    color: white;
+}
+
+/*Registro*/
+
+.formRegister{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formRegister label{
+    display: block;
+}
+
+.inp input{
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.fecha{
+    display: flex;
+    flex-direction:column;
+}
+
+.fecha label{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.fecha input{
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+}
+
+
+.perfilUser{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.perfilUser label{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.categoria label{
+    text-align: center;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.fotoUser{
+    margin: 15px;
+}
+
+.button{
+    display: flex;
+}
+
+.button input{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #1259c3;
+    color: white;
+
+    &:hover{
+        background-color: #0022AA;
+        color: white;
+    }
+}
