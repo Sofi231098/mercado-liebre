@@ -179,6 +179,148 @@ main{
     font-size: 16px;
 }
 
+/*Login*/
+.formLogin{
+    width:50%;
+    justify-content: center;
+    margin: auto;
+}
+
+.formLogin .inp{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+
+.contButton input{
+    display: block;
+    margin:auto;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #1259c3;
+    color: white;
+    border:#00aa0b 1px solid;
+
+    &:hover{
+        background-color: #0022AA;
+        color: white;
+    
+    }
+}
+
+
+
+/*Registro*/
+
+.formRegister{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.formRegister label{
+    width: 100%;
+}
+
+.inp input{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+}
+
+.fecha{
+    display: flex;
+    flex-direction:column;
+}
+
+.fecha label{
+    margin-bottom: 5px;
+    width: 90px;
+    margin-left: 20px;
+}
+
+
+
+
+.perfilUser{
+    display: flex;
+   flex-direction:column;
+}
+
+.perfilUser .label-title{
+  margin-bottom: 15px;
+   width: 90px;
+   margin-left: 20px;
+}
+
+.perfilUser .choses{
+    margin: center;
+    align-items: baseline;
+}
+
+.choses label{
+    margin-left: 20px;
+    width: 90px;
+}
+
+.categoria .title{
+   margin:20px;
+   width: 70%;
+} 
+
+.categoria .inputCategoria{
+    margin-left: 20px;
+    width: 90px;
+}
+.categoria label{
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.fotoUser{
+    margin: 20px;
+}
+
+.fotoUser input{
+    margin-top: 15px;
+
+}
+
+.inp-password{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    width: 70%;
+}
+
+
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button input{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #1259c3;
+    color: white;
+
+    &:hover{
+        background-color: #0022AA;
+        color: white;
+    }
+}
+
 
 @media(min-width:480px){
     .main-header-top-bar{
@@ -211,6 +353,12 @@ main{
         .container-article article{
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
         }
+        &:hover{
+            .fa-truck{
+                transform: rotateZ(270deg);
+            }
+        }
+        
     }
     
 }
@@ -306,115 +454,5 @@ main{
 
     .footer-container .copyright{
         width: 100%;
-    }
-}
-
-/*Login*/
-.formLogin{
-    width:50%;
-    justify-content: center;
-    margin: auto;
-}
-
-.formLogin .inp{
-    border: none;
-    border-radius: 5px;
-    width: 90%;
-    padding: 10px;
-    margin: 20px;
-}
-
-
-
-.formLogin .button{
-    display: block;
-    margin:auto;
-    margin-bottom: 15px;
-    border: none;
-    width: 50%;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #1259c3;
-    color: white;
-}
-
-.formLogin .button:hover{
-    background-color: #0022AA;
-    color: white;
-}
-
-/*Registro*/
-
-.formRegister{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formRegister label{
-    display: block;
-}
-
-.inp input{
-    border: none;
-    border-radius: 5px;
-    width: 90%;
-    padding: 10px;
-    margin: 20px;
-}
-
-.fecha{
-    display: flex;
-    flex-direction:column;
-}
-
-.fecha label{
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.fecha input{
-    border: none;
-    border-radius: 5px;
-    padding:10px;
-}
-
-
-.perfilUser{
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-}
-
-.perfilUser label{
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.categoria label{
-    text-align: center;
-    margin-bottom: 5px;
-    display: flex;
-}
-
-.fotoUser{
-    margin: 15px;
-}
-
-.button{
-    display: flex;
-}
-
-.button input{
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px;
-    background-color: #1259c3;
-    color: white;
-
-    &:hover{
-        background-color: #0022AA;
-        color: white;
     }
 }

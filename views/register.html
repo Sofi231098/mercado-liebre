@@ -24,7 +24,6 @@
             <img class="logo" src="/images/logo-mercado-liebre.svg" title="logo mercado liebre"
                 alt="logo mercado liebre">
             <form class="search" action="/buscar" method="GET">
-                <!-- El atributo action puede llevar a la URL donde se enviará la búsqueda -->
                 <input class="cuotas" type="text" id="busqueda" name="q" placeholder="Buscar productos, marcas">
                 <button class="cuotas" type="submit" value="Buscar">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -60,65 +59,64 @@
     </header>
     <main>
         <form class="formRegister" action="register.html" metohd="POST">
-            <p class="inp"><label for="name"></label>
+            <div class="inp"><label for="name"></label>
                 <input type="text" id="name" name="name" value="Nombre">
-            </p>
+            </div>
 
-            <p class="inp">
+            <div class="inp">
                 <label for="surname"></label>
                 <input type="text" id="surname" name="surname" value="Apellido">
-            </p>
+            </div>
 
-            <P class="inp"><label for="user"></label>
+            <div class="inp"><label for="user"></label>
                 <input type="text" id="user" name="user" value="Nombre de usuari@">
-            </P>
+            </div>
 
-            <P class="inp"><label for="email"></label>
+            <div class="inp"><label for="email"></label>
                 <input type="text" id="email" name="email" value="Email">
-            </P>
+            </div>
 
-            <P class="fecha"><label>Fecha de Nacimiento:</label>
-                <input type="date" name="fechaNacimiento" id="fechaNacimiento">
-            </P>
+            <div class="fecha inp"><label>Fecha de Nacimiento:</label>
+                <input  type="date" name="fechaNacimiento" id="fechaNacimiento">
+            </div>
 
-            <P class="inp">
+            <div class="inp">
                 <label for="adress"></label>
                 <input type="text" id="adress" name="adress" value="Domicilio">
-            </P>
+            </div>
 
-            <P class="perfilUser"><label for="perfil">Perfil de usuario:</label>
-                <label name="comprador"><input type="radio" name="perfil" value="comprador">Comprador</label>
-                <label name="Comprador"><input type="radio" name="perfil" value="comprador">Venderor</label>
-            </P>
+            <div class="perfilUser"><label class="label-title" for="perfil">Perfil de usuario:</label>
+                <div class="choses">
+                    <label name="comprador"><input type="radio" name="perfil" value="comprador">Comprador</label>
+                    <label name="Comprador"><input type="radio" name="perfil" value="comprador">Venderor</label>
+                </div>
+            </div>
 
-            <P class="categoria">
-                <label for="categoria">Categorías de Interés:</label>
-
-                <label><input type="checkbox" name="categoria" value="Electro"> Electro</label>
+            <div class="categoria">
+                <label class="title" for="categoria">Categorías de Interés:</label>
+                <label class="inputCategoria"><input type="checkbox" name="categoria" value="Electro"> Electro</label>
                 <label class="inputCategoria"><input type="checkbox" name="categoria" value="Moda">Moda</label>
                 <label class="inputCategoria"><input type="checkbox" name="categoria" value="Hogar">Hogar</label>
-                <label class="inputCategoria"><input type="checkbox" name="categoria"
-                        value="Juguetería">Juguetería</label>
-                <label class="inputCategoria"><input type="checkbox" name="categoria" value="Vida Sana">Vida
-                    Sana</label></div>
+                <label class="inputCategoria"><input type="checkbox" name="categoria"value="Juguetería">Juguetería</label>
+                <label class="inputCategoria"><input type="checkbox" name="categoria" value="Vida Sana">Vida Sana</label></div>
 
-            </P>
+            </div>
 
-            <P class="fotoUser"><label>Foto de usuario:</label>
+            <div class="fotoUser"><label>Foto de usuario:</label>
                 <input type="file" name="foto" id="foto" accept=".jpg" multiple>
-            </P>
+            </div>
 
-            <P class="inp"><label for="password"></label>
+            <div class="inp"><label class="inp-password" for="password">Confirmar contraseña:</label>
                 <input type="password" id="password" name="password" value="Password">
-            </P>
+            </div>
 
-            <P class="inp"><label for="ConfirmPassword"></label>
+            <div class="inp"><label class="inp-password" for="ConfirmPassword">Contraseña:</label>
                 <input type="password" id="ConfirmPassword" name="ConfirmPassword" value="Confirmar contraseña">
-            </P>
+            </div>
 
-            <P class="button"> <input type="submit" value="Enviar">
+            <div class="button"> <input type="submit" value="Enviar">
                 <input type="reset" value="Borrar">
-            </P>
+            </div>
         </form>
     </main>
     <footer class="footer-container">
