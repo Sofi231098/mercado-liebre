@@ -14,7 +14,7 @@ app.listen(port, () =>{
     console.log(`Servidor up on port: http://localhost:${port}`);
 });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "views/home.html"));
 });
 app.get("/register", (req, res) => {
